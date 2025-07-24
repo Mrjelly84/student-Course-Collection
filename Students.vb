@@ -1,5 +1,4 @@
 ﻿Public Class Student
-
     Public Property IdNumber As String
     Public Property LastName As String
     Private testAvg As Double
@@ -15,7 +14,6 @@
             Else
                 MessageBox.Show("Invalid test Average", "Error")
             End If
-
         End Set
     End Property
 
@@ -27,7 +25,6 @@
     End Sub
 
     Public Overrides Function ToString() As String
-        Return $"{IdNumber}  {LastName}  Test Average: {TestAverage}"
+        Return $"{IdNumber}, {LastName}, Test Average = {TestAverage.ToString("n2")}"
     End Function
-
 End Class

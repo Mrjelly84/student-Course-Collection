@@ -10,7 +10,6 @@
     End Sub
 
     Public Overrides Function ToString() As String
-        Return $"{Id}  {Credits}  Grade: {Grade}"
+        Return $"{Id} {Credits} grade: {Grade}"
     End Function
-
 End Class

@@ -20,173 +20,198 @@ Partial Class Form2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        GroupBox1 = New GroupBox()
-        Me.txtCredits = New TextBox()
-        Button2 = New Button()
-        Label4 = New Label()
-        Label3 = New Label()
-        Label2 = New Label()
+        components = New ComponentModel.Container()
         btnClose = New Button()
-        Label1 = New Label()
         Label5 = New Label()
+        GroupBox1 = New GroupBox()
         txtCourseNumber = New TextBox()
-        Me.txtGrade = New TextBox()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        txtGrade = New TextBox()
+        btnSave = New Button()
+        txtCredits = New TextBox()
         lstCourses = New ListBox()
         lblStudent = New Label()
+        Label4 = New Label()
+        errProvider = New ErrorProvider(components)
         GroupBox1.SuspendLayout()
+        CType(errProvider, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.Controls.Add(Me.txtGrade)
-        GroupBox1.Controls.Add(txtCourseNumber)
-        GroupBox1.Controls.Add(Me.txtCredits)
-        GroupBox1.Controls.Add(Button2)
-        GroupBox1.Controls.Add(Label4)
-        GroupBox1.Controls.Add(Label3)
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Location = New Point(45, 43)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(432, 156)
-        GroupBox1.TabIndex = 0
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "Add Course Info"
-        ' 
-        ' txtCredits
-        ' 
-        Me.txtCredits.Location = New Point(293, 34)
-        Me.txtCredits.Name = "txtCredits"
-        Me.txtCredits.Size = New Size(100, 23)
-        Me.txtCredits.TabIndex = 4
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(286, 70)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
-        Button2.TabIndex = 3
-        Button2.Text = "Save"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(243, 37)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(44, 15)
-        Label4.TabIndex = 2
-        Label4.Text = "Credits"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(42, 81)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(38, 15)
-        Label3.TabIndex = 1
-        Label3.Text = "Grade"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(23, 34)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(89, 15)
-        Label2.TabIndex = 0
-        Label2.Text = "Course number"
         ' 
         ' btnClose
         ' 
-        btnClose.Location = New Point(58, 219)
+        btnClose.Location = New Point(19, 250)
+        btnClose.Margin = New Padding(4, 3, 4, 3)
         btnClose.Name = "btnClose"
-        btnClose.Size = New Size(75, 23)
-        btnClose.TabIndex = 2
+        btnClose.Size = New Size(88, 29)
+        btnClose.TabIndex = 12
         btnClose.Text = "Close"
         btnClose.UseVisualStyleBackColor = True
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(49, 6)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(84, 15)
-        Label1.TabIndex = 3
-        Label1.Text = "Student name:"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(524, 37)
+        Label5.Location = New Point(541, 43)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
         Label5.Size = New Size(95, 15)
-        Label5.TabIndex = 4
+        Label5.TabIndex = 17
         Label5.Text = "Existing Courses:"
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(txtCourseNumber)
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Controls.Add(Label2)
+        GroupBox1.Controls.Add(Label3)
+        GroupBox1.Controls.Add(txtGrade)
+        GroupBox1.Controls.Add(btnSave)
+        GroupBox1.Controls.Add(txtCredits)
+        GroupBox1.Location = New Point(19, 65)
+        GroupBox1.Margin = New Padding(4, 3, 4, 3)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Padding = New Padding(4, 3, 4, 3)
+        GroupBox1.Size = New Size(500, 168)
+        GroupBox1.TabIndex = 16
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Add Course Info"
         ' 
         ' txtCourseNumber
         ' 
-        txtCourseNumber.Location = New Point(117, 34)
+        txtCourseNumber.Location = New Point(169, 38)
+        txtCourseNumber.Margin = New Padding(5, 5, 5, 5)
         txtCourseNumber.Name = "txtCourseNumber"
-        txtCourseNumber.Size = New Size(100, 23)
-        txtCourseNumber.TabIndex = 5
+        txtCourseNumber.Size = New Size(110, 23)
+        txtCourseNumber.TabIndex = 0
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(38, 43)
+        Label1.Margin = New Padding(5, 0, 5, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(89, 15)
+        Label1.TabIndex = 0
+        Label1.Text = "Course number"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(306, 43)
+        Label2.Margin = New Padding(5, 0, 5, 0)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(44, 15)
+        Label2.TabIndex = 1
+        Label2.Text = "Credits"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(104, 81)
+        Label3.Margin = New Padding(5, 0, 5, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(38, 15)
+        Label3.TabIndex = 2
+        Label3.Text = "Grade"
         ' 
         ' txtGrade
         ' 
-        Me.txtGrade.Location = New Point(117, 81)
-        Me.txtGrade.Name = "txtGrade"
-        Me.txtGrade.Size = New Size(52, 23)
-        Me.txtGrade.TabIndex = 6
+        txtGrade.Location = New Point(169, 76)
+        txtGrade.Margin = New Padding(5, 5, 5, 5)
+        txtGrade.Name = "txtGrade"
+        txtGrade.Size = New Size(61, 23)
+        txtGrade.TabIndex = 2
+        ' 
+        ' btnSave
+        ' 
+        btnSave.Location = New Point(342, 81)
+        btnSave.Margin = New Padding(5, 5, 5, 5)
+        btnSave.Name = "btnSave"
+        btnSave.Size = New Size(85, 32)
+        btnSave.TabIndex = 3
+        btnSave.Text = "Save"
+        btnSave.UseVisualStyleBackColor = True
+        ' 
+        ' txtCredits
+        ' 
+        txtCredits.Location = New Point(376, 36)
+        txtCredits.Margin = New Padding(5, 5, 5, 5)
+        txtCredits.Name = "txtCredits"
+        txtCredits.Size = New Size(51, 23)
+        txtCredits.TabIndex = 1
         ' 
         ' lstCourses
         ' 
         lstCourses.FormattingEnabled = True
-        lstCourses.Location = New Point(524, 55)
+        lstCourses.Location = New Point(541, 65)
+        lstCourses.Margin = New Padding(4, 3, 4, 3)
         lstCourses.Name = "lstCourses"
-        lstCourses.Size = New Size(255, 169)
-        lstCourses.TabIndex = 5
+        lstCourses.Size = New Size(243, 169)
+        lstCourses.TabIndex = 15
         ' 
         ' lblStudent
         ' 
         lblStudent.AutoSize = True
-        lblStudent.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblStudent.Location = New Point(139, 6)
+        lblStudent.Font = New Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblStudent.Location = New Point(135, 23)
+        lblStudent.Margin = New Padding(5, 0, 5, 0)
         lblStudent.Name = "lblStudent"
-        lblStudent.Size = New Size(73, 15)
-        lblStudent.TabIndex = 6
+        lblStudent.Size = New Size(93, 17)
+        lblStudent.TabIndex = 14
         lblStudent.Text = "(lblStudent)"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(15, 22)
+        Label4.Margin = New Padding(5, 0, 5, 0)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(84, 15)
+        Label4.TabIndex = 13
+        Label4.Text = "Student name:"
+        ' 
+        ' errProvider
+        ' 
+        errProvider.ContainerControl = Me
         ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 247)
-        Controls.Add(lblStudent)
-        Controls.Add(lstCourses)
-        Controls.Add(Label5)
-        Controls.Add(Label1)
+        ClientSize = New Size(821, 315)
         Controls.Add(btnClose)
+        Controls.Add(Label5)
         Controls.Add(GroupBox1)
+        Controls.Add(lstCourses)
+        Controls.Add(lblStudent)
+        Controls.Add(Label4)
+        Margin = New Padding(4, 3, 4, 3)
         Name = "Form2"
-        Text = "Course Information Form"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "courses"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        CType(errProvider, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
+
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnClose As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents txtCourseNumber As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtGrade As TextBox
+    Friend WithEvents btnSave As Button
+    Friend WithEvents txtCredits As TextBox
     Friend WithEvents lstCourses As ListBox
     Friend WithEvents lblStudent As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents errProvider As ErrorProvider
 End Class
